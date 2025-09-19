@@ -1,0 +1,23 @@
+                    <p>Incoming Requests</p>
+                           <div class="table-responsive">
+                            <table id="data-table" class="table data-table">
+                                <thead>
+                                    <tr>
+                                       <th>Requester</th>
+                                        <th>Training</th>
+                                        <th>Date</th>
+                                        <th>Location</th>
+                                        <th>Total Cost</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr style="cursor: pointer" onclick="openTrainingRequest(${ID})">
+                                       <td>${requesterName}</td>
+                                        <td>${proposedTraining}</td>
+                                        <td>${trainingDate}</td>
+                                        <td>${trainingLocation}</td>
+                                        <td>${totalCost}</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>

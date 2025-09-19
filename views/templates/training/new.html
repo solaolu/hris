@@ -1,0 +1,134 @@
+<form id="trainingRequestForm" enctype="multipart/form-data" method="post">
+   <p>New Request</p>
+   <table cellpadding="4" width="100%" class="table-responsive">
+      <tbody>
+         <tr>
+            <td width=33%>
+            <div class="form-group">
+                <input type="text" class="autoclear form-control" name="proposedTraining" placeholder="Proposed Training" size="32" title="Proposed Training" label="Proposed Training"></div> </td>
+            <td width=33% >
+             <div  class="form-group">
+              <div class="select">
+               <select name="trainingType" class="form-control">
+                  <option selected="selected">Type of Training</option>
+                  <option></option>
+               </select>
+               </div>   
+               </div> 
+            </td>
+         </tr>
+         <tr>
+            <td val="" ign="top" colspan="2">
+               <p>Training Content<br><textarea name="trainingContent" class="form-control" cols="35" rows="6"></textarea></p>
+            </td>
+         </tr>
+         <tr>
+            <td val="" ign="top">
+            
+            <div class="input-group">
+                                        <span class="input-group-addon"><i class="zmdi zmdi-calendar"></i></span>
+                                        <div class="form-group">
+                                            <input type="text" class="date-picker dp-applied form-control" name="trainingDate" placeholder="Training Date" size="32" title="Training Date" label="Training Date">
+                                            <i class="form-group__bar"></i>
+                                        </div>
+                                    </div>
+            <br>    </td>
+            <td val="" ign="top"><input type="text" class="autoclear form-control" name="trainingLocation" placeholder="Training Location" size="32" title="Training Location" label="Training Location"><br>    </td>
+            <td val="" ign="top"><input type="text" class="autoclear form-control" name="trainingHours" placeholder="Training Hours" size="32" title="Training Hours" label="Training Hours"><br>    </td>
+         </tr>
+         <tr>
+            <td val="" ign="top"><input type="text" class="autoclear form-control" name="sessionCount" placeholder="Session Count" size="32" title="Session Count" label="Session Count"><br>    </td>
+            <td val="" ign="top"><input type="text" class="autoclear form-control" name="sessionLength" placeholder="Session Length" size="32" title="Session Length" label="Session Length"><br>    </td>
+         </tr>
+         <tr>
+            <td val="" ign="top"><div class="input-group">
+                                        <span class="input-group-addon">&#8358;</span>
+                                        <div class="form-group">
+                                            <input type="text" class="autoclear form-control" name="registrationFee" placeholder="Registration Fee" size="32" title="Registration Fee" label="Registration Fee">
+                                        </div>
+                                    </div><br>    </td>
+            <td val="" ign="top"><div class="input-group">
+                                        <span class="input-group-addon">&#8358;</span>
+                                        <div class="form-group">
+                                            <input type="text" class="autoclear form-control" name="otherCosts" placeholder="Other Costs" size="32" title="Other Costs" label="Other Costs">
+                                            
+                                        </div>
+                                    </div><br>    </td>
+            <td val="" ign="top"><div class="input-group">
+                                        <span class="input-group-addon">&#8358;</span>
+                                        <div class="form-group">
+                                            <input type="text" class="autoclear form-control" name="totalCost" placeholder="Total Cost" size="32" title="Total Cost" label="Total Cost">
+                                            
+                                        </div>
+                                    </div><br>    </td>
+         </tr>
+         <tr>
+            <td val="" ign="top"><input type="text" class="autoclear form-control" name="proposedFundSource" placeholder="Proposed Fund Source" size="32" title="Proposed Fund Source" label="Proposed Fund Source"><br>    </td>
+         </tr>
+         <tr>
+            <td val="" ign="top">
+              
+              <label class="custom-control custom-checkbox">
+                                <input class="custom-control-input" type="checkbox" name="requiresReleaseTime" value="1">
+                                <span class="custom-control-indicator"></span>
+                                <span class="custom-control-description">&nbsp;Is release time needed?</span>
+               </label>   
+            </td>
+            <td val="" ign="top">
+               <label class="custom-control custom-checkbox">
+                   <input class="custom-control-input" type="checkbox" name="requiresReplacement" value="1">
+                   <span class="custom-control-indicator"></span>
+                   <span class="custom-control-description">&nbsp;Is there need for replacement staffing?</span>
+               </label>   
+            </td>
+         </tr>
+         <tr><td>&nbsp;</td></tr>
+         <tr>
+            <td valign="bottom">
+               <p>Training Description<br><textarea class="form-control"  name="trainingDescription" cols="35" rows="6"></textarea></p>
+            </td>
+            <td valign="bottom">
+               <p>Training Rationale<br><small><em>(what is the reason for the training; what led to training need; what will you be able to do differently as a result of this training)<em></em></em></small><em><em><br><textarea class="form-control"  name="trainingRationale" cols="35" rows="6"></textarea></em></em></p>
+               <em><em>    </em></em>
+            </td>
+            <td valign="bottom">
+               <p>Desired Competency<br><small><em>(Be specific as to anticipated skills, knowledge and/or professional development (e.g customer service, communications etc).<em></em></em></small><em><em><br><textarea class="form-control"  name="desiredCompetency" cols="35" rows="6"></textarea></em></em></p>
+               <em><em>    </em></em>
+            </td>
+         </tr>
+         <tr>
+            <td valign="top">
+               <p>Personal Outcome<br><textarea class="form-control"  name="personalOutcome" cols="35" rows="6"></textarea></p>
+            </td>
+            <td valign="top">
+               <p>Unit Outcome<br><textarea class="form-control"  name="unitOutcome" cols="35" rows="6"></textarea></p>
+            </td>
+            <td valign="top">
+               <p>CMS Outcome<br><textarea class="form-control"  name="cmsOutcome" cols="35" rows="6"></textarea></p>
+            </td>
+         </tr>
+         <tr>
+            <td class="form-group">
+               <p>How will this information be shared with other unit members?<br><textarea class="form-control"  name="sharedHow" cols="35" rows="6"></textarea></p>
+            </td>
+         </tr>
+         <tr>
+            <td val="" ign="top"><br>
+               <label class="custom-control custom-checkbox">
+                   <input class="custom-control-input" type="checkbox" name="partOfCertification" value="1">
+                   <span class="custom-control-indicator"></span>
+                   <span class="custom-control-description">Part Of Certification</span>
+               </label>
+            </td>
+         </tr>
+         <tr>
+            <td colspan=2>
+               <p>If this is part of a certification, please list the courses completed and remaining<br><textarea class="form-control" name="certificationCourses" cols="35" rows="6"></textarea></p>
+            </td>
+         </tr>
+      </tbody>
+   </table>
+   <p></p>
+   <div id="buttonContainer"><a class="btn btn-primary" onclick="postTrainingRequest()">Submit Request</a></div>
+   <p></p>
+</form>

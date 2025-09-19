@@ -1,0 +1,54 @@
+                <h5>Reporting Line Task Dashboard</h5>
+                <h6>Week ${code}</h6>
+                <p>&nbsp;</p>
+                   <div id="user-card" class="row" >
+                    <div class="col-md-4" style="display: inline-grid">
+                     <div class="card">
+                                    <div class="card-header" role="tab" id="headingTwo">
+                                            ${fullname}
+                                            
+                                            <div class="actions toolbar__actions" style="margin-top:-10px;">
+                                                <div class="dropdown actions__item">
+                                                    <i class="actions__item zmdi zmdi-more-vert" data-toggle="dropdown"></i>
+                                                    <div class="dropdown-menu dropdown-menu-right">
+                                                        <!--<a href="" class="dropdown-item">Assign New Task</a>-->
+                                                        <a href="#" onclick="getReport('${email}', '${fullname}')" class="dropdown-item">Most Recent Report</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                    </div>
+                                    <div class="card-body">
+                                           <div id="tasks" class="listview">
+                                               <strong>${tasks==null?'No tasks entered':''}</strong>
+                                               {{each tasks}}
+                                                <a href="#" class="listview__item" title="${status!=null?status.comments:''}">
+                                                    <div class="listview__content">
+                                                        <div class="listview__heading">${toDo}</div>
+
+                                                        <div class="progress mt-2">
+                                                            <div class="progress-bar ${status!=null?status.class:''}" style="width: ${status!=null?status.percentage:''}%" aria-valuenow="${status!=null?status.percentage:''}" aria-valuemin="0" aria-valuemax="100"></div>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                                {{/each}}
+                                            </div>       
+                                    </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="report-window" data-backdrop="static" data-keyboard="false">
+                        <div class="modal-dialog modal-xl">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title"><span id="user__tag"></span> - Week <span id="week__tag"></span> Report</h5>
+                                </div>
+                                <div class="modal-body">
+                                    
+                                </div>
+
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-link" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>

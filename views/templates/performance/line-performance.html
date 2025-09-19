@@ -1,0 +1,76 @@
+<h5>PERFORMANCE TASKS</h5>
+<P>&nbsp;</P>
+<div class="row">
+ <div class="col-md-5 col-sm-7 col-xs-8"><p>${message}</p></div>
+ <div class="col-md-1 col-sm-2 col-xs-0">&nbsp;</div>
+ <div class="col-md-3 col-sm-3 col-xs-4">
+
+ </div> 
+ <div class="col-md-3 col-sm-3 col-xs-4">
+     <div class="card">
+        <div class="card-header">
+            Score Summary (Manager)
+        </div>
+         <div class="card-body">
+             <center><h3 id="score_summary">${score}</h3></center>
+         </div>
+     </div>
+ </div>
+</div> 
+
+  <form id="LMAssessmentForm">
+  <input type="hidden" id="kpiID" name="kpiSummaryID" value="${code}" />
+  <input type="hidden" name="period" value="${period}" />
+  <input type="hidden" name="owner" value="${owner}" />
+  <input type="hidden" name="score_summary" />
+        <table  class="table table-striped table-bordered" cellpadding="3" cellspacing="1">
+          <tbody class="kpi-tbody">
+            <tr >
+              <td align="center">INITIATIVE</td>
+              <td align="center">TASK</td>
+              <td align="center">WEIGHT</td>
+              <td align="center">RATING</td>
+              <td align="center">SCORE</td>
+            </tr>
+          </tbody>
+        </table>
+        <p>&nbsp;</p>
+        <!---<h5>APPROVER'S REVIEW & COMMENTS</h5>
+        <table>
+            <tr>
+                  <td align="right"><strong>Approval Status: </strong></td>
+                  <td><table width="200">
+                    <tr>
+                      <td><label>
+                        <input type="radio" name="approval" value="approved" id="RadioGroup1_0" />
+                        Approve</label></td>
+                      <td><label>
+                        <input type="radio" name="approval" value="disapproved" id="RadioGroup1_1" />
+                        Disapprove</label></td>
+                    </tr>
+                  </table></td>
+                </tr>
+		<tr>
+				<td colspan="2" valign="top">
+						<p>What specific strength has the employee
+					    demonstrated on this job that should be
+					    fully used during the next six months? </p>
+				<p><input class="form-control" type="text" name="strengthDemonstrated" size=40 placeholder="type here..." /></p></td>
+		</tr>
+		<tr>
+				<td colspan="2" valign="top">
+						<p>List 2-3 areas (if applicable) in which the 
+					    employee needs to improve his/her performance
+during the next six months (gaps in knowledge 
+or experience, skill development needs, behaviour
+modifications that affect job performance, etc).</p>
+				<p><textarea class="form-control" name="improveOn" cols=45 rows=10 placeholder="type here..." ></textarea></p></td>
+		</tr>	
+                <tr>
+                  <td valign="top"><p>Comments:</p>
+                  <textarea class="form-control" name="comment" id="comment" cols="45" rows="10" placeholder="type here..."></textarea></td>
+                </tr>
+        </table>-->
+        <p>&nbsp;</p>
+  <p id="performanceResponse"><a class="btn btn-primary" onclick="evaluatePerformance()">Submit My Response</a><!--&nbsp;<a onclick="appraisal_reset()" class="btn btn-dark">Return for Adjustment</a>--></p>
+  </form>

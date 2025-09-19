@@ -1,0 +1,118 @@
+   <h3>${requesterName}</h3>
+     <table cellpadding="4" width="100%" class="table-responsive table-striped">
+      <tbody>
+         <tr>
+            <td width=33%>
+            <div class="form-group">
+               Proposed Training:<br />
+                <div class="data-field badge-translucent">${proposedTraining}</div>
+            </div> </td>
+            <td width=33% >
+             <div  class="form-group">
+                 Type of Training<br />
+                 <div class="data-field badge-translucent">${trainingType} </div>
+               </div> 
+            </td>
+         </tr>
+                  <tr><td>&nbsp;</td></tr>
+         <tr>
+            <td val="" ign="top" colspan="2">
+                <p>Training Content<br><div class="data-field badge-translucent">${trainingContent}</div></p>
+            </td>
+         </tr>
+                  <tr><td>&nbsp;</td></tr>
+         <tr>
+            <td val="" ign="top">
+                <p>Training Date:<br /><div class="data-field badge-translucent">${trainingDate}</div></p>
+            </td>
+            <td val="" ign="top">
+                <p>Training Location:<br><div class="data-field badge-translucent">${trainingLocation}</div></p>
+            </td>
+             <td val="" ign="top"><p>Training Hours:<br><div class="data-field badge-translucent">${trainingHours}</div>
+            </p></td>
+         </tr>
+                  <tr><td>&nbsp;</td></tr>
+         <tr>
+             <td val="" ign="top">Session Count:<br /><div class="data-field badge-translucent">${sessionCount}</div></td>
+             <td val="" ign="top">Session Length:<br /><div class="data-field badge-translucent">${sessionLength}</div></td>
+         </tr>
+                  <tr><td>&nbsp;</td></tr>
+         <tr>
+            <td val="" ign="top">
+                                           Registration Fee:<br>
+                <div class="data-field badge-translucent">${registrationFee}</div>
+                                            </td>
+            <td val="" ign="top">
+                                            Other Costs: <br />
+                <div class="data-field badge-translucent">${otherCosts}</div></td>
+            <td val="" ign="top">
+                                           Total Cost: <br />
+                <div class="data-field badge-translucent">${totalCost}</div>
+                                            
+            </td>
+         </tr>
+                  <tr><td>&nbsp;</td></tr>
+         <tr>
+             <td val="" ign="top">Proposed Fund Source:<br><div class="data-field badge-translucent">${proposedFundSource}</div></td>
+         </tr>
+                  <tr><td>&nbsp;</td></tr>
+         <tr>
+             <td val="" ign="top">Is release time needed?&nbsp; <span class="badge badge-translucent">${requiresReleaseTime==1?"YES":"NO"}  </span>
+            </td>
+            <td val="" ign="top">
+                Is there need for replacement staffing? &nbsp; <span class="badge badge-translucent">${requiresReplacement==1?"YES":"NO"}  </span>
+            </td>
+         </tr>
+         
+         <tr><td>&nbsp;</td></tr>
+         <tr>
+            <td valign="bottom">
+                <p>Training Description:<br><div class="data-field badge-translucent">${trainingDescription}</div></p>
+            </td>
+            <td valign="bottom">
+                <p>Training Rationale:<br><div class="data-field badge-translucent">${trainingRationale}</div></p>
+            </td>
+            <td valign="bottom">
+                <p>Desired Competency:<br><div class="data-field badge-translucent">${desiredCompetency}</div></p>
+            </td>
+         </tr>
+                  <tr><td>&nbsp;</td></tr>
+         <tr>
+            <td valign="top">
+                <p>Personal Outcome:<br><div class="data-field badge-translucent">${personalOutcome}</div></p>
+            </td>
+            <td valign="top">
+                <p>Unit Outcome:<br><div class="data-field badge-translucent">${unitOutcome}</div></p>
+            </td>
+            <td valign="top">
+                <p>CMS Outcome:<br><div class="data-field badge-translucent">${cmsOutcome}</div></p>
+            </td>
+         </tr>
+                  <tr><td>&nbsp;</td></tr>
+         <tr>
+            <td class="form-group">
+                <p>How will this information be shared with other unit members?<br><div class="data-field badge-translucent">${sharedHow}</div></p>
+            </td>
+         </tr>
+                  <tr><td>&nbsp;</td></tr>
+         <tr>
+             <td val="" ign="top">Part Of Certification: <span class="badge badge-translucent">${partOfCertification==1?"YES":"NO"}</span>
+            </td>
+         </tr>
+                  <tr><td>&nbsp;</td></tr>
+         <tr>
+            <td colspan=2>
+               <p>If this is part of a certification, please list the courses completed and remaining<br>
+                <div class="data-field badge-translucent">${certificationCourses}</div></p>
+            </td>
+         </tr>
+      </tbody>
+   </table>
+   <p>&nbsp;</p>
+   <form id="LMAction">
+      <input type="hidden" name="ID" value="${ID}" >
+      <input type="hidden" name="mode" value="LM" >
+      <input type="hidden" name="by" value="${linemgremail}" >
+       <p>Approver's Action</p>
+       <p><a class='btn btn-success' href=# onclick='processTrainingRequest(1)'>Approve</a>&nbsp;<a class='btn btn-danger' href=# onclick='processTrainingRequest(0)'>Disapprove</a></p>
+   </form>

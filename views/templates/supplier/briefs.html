@@ -1,0 +1,20 @@
+                    '<div class="table-responsive">
+                            <table id="data-table" class="table data-table">
+                                <thead>
+                                    <tr>
+                                        <th>Project Name</th>
+                                        <th>Date</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                   {{each object}}
+                                    <tr>
+                                        <td>&nbsp;&nbsp;${ProjectName}</td>
+                                        <td>${EventDate}</td>
+                                        <td><a href="#" onclick="openBrief(${ID})">View Details</a></td>
+                                    </tr>
+                                    {{/each}}
+                                </tbody>
+                            </table>
+                        </div>'

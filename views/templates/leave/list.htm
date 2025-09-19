@@ -1,0 +1,27 @@
+<h3>LINE LEAVE REQUESTS</h3>
+<div class="table-responsive">
+        <table id="data-table" class="table data-table">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Request Date</th>
+                    <th>Leave Starts</th>
+                    <th>Leave Ends</th>
+                    <th>Days</th>
+                    <th>Handover Note</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr id="row-${ID}">
+                    <td>${fullname}</td>
+                    <td>${applicationDate}</td>
+                    <td>${fromDate}</td>
+                    <td>${toDate}</td>
+                    <td>${totalLeaveDays}</td>
+                    <td><a href='${handoverNote}' target="_blank">Read</a></td>
+                    <td><a href="#" onclick="processLeave(${ID}, 'approved')" class="btn btn-sm btn-success">Approve</a>&nbsp;<a  onclick="processLeave(${ID}, 'disapproved')" href="#" class="btn btn-sm btn-danger">Disapprove</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>

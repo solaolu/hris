@@ -1,0 +1,79 @@
+<form id="leaveRequestForm" enctype="multipart/form-data" method="post">
+   <h4>New Leave Request</h4>
+   <p>&nbsp;</p>
+   <table cellpadding="4" width="100%" cellspacing="0">
+      <tbody>
+         <tr>
+            <td width="33%" val="" ign="bottom">
+               <p>Home Address<br><br><textarea name="homeAddress" class="form-control" cols="35" rows="6">${profile.address}</textarea></p>
+            </td>
+            <td width="33%" val="" ign="bottom">
+               <p>Contact Address<br>(while on leave)<br><textarea name="leaveAddress" class="form-control" cols="35" rows="6">${profile.address}</textarea></p>
+            </td>
+            <td width="33%" valign="bottom">
+                <p>Next of Kin Contact Information<br />(Name, Address and Phone number)<br><textarea class="form-control" name="nokInformation" cols="35" rows="6">${profile.nokInfo}</textarea></p></td>
+         </tr>
+         <tr>
+            <td val="" ign="top">
+              <input type="text" class="form-control" name="leavePhone" placeholder="Phone Number (while on leave)" value="${profile.phonenumber}" size="32" title="Leave Phone" label="Leave Phone"><br />
+            </td>
+         </tr>
+         <tr>
+            <td val="" ign="top">Total leave days<br /><input type="text" class="form-control" name="totalLeaveDays" placeholder="Total Leave Days" size="32" title="Total Leave Days" readonly value="${code}" label="Total Leave Days"><br>    </td>
+            <td val="" ign="top">
+                                   Leave Starts On:<br />
+                                    <div class="input-group">
+                                        <span class="input-group-addon"><i class="zmdi zmdi-calendar"></i></span>
+                                        <div class="form-group">
+                                            <input type="text" class="date--picker dp-applied form-control" name="fromDate" value="${start}" readonly placeholder="Leave Start Date" size="32" >
+                                            <i class="form-group__bar"></i>
+                                        </div>
+                                    </div>
+                <br>    </td>
+            <td val="" ign="top">
+                                   Leave Ends On:<br />
+                                    <div class="input-group">
+                                        <span class="input-group-addon"><i class="zmdi zmdi-calendar"></i></span>
+                                        <div class="form-group">
+                                            <input type="text" class="date--picker dp-applied form-control" name="toDate" value="${finish}" readonly placeholder="Leave End Date" size="32" >
+                                            <i class="form-group__bar"></i>
+                                        </div>
+                                    </div>
+                <br>    </td>
+         </tr>
+         <tr>
+            <td colspan="3">
+              <p>&nbsp;</p>
+               <h5>The ${code} day(s) consists of: </h5>
+               <hr size="1">
+            </td>
+         </tr>
+         <tr>
+            <td val="" ign="top"><input type="text" class="form-control" name="annualLeaveDays" placeholder="Annual Leave Days" size="32" title="Annual Leave Days" label="Annual Leave Days"><br>    </td>
+            <td val="" ign="top"><input type="text" class="form-control" name="sickLeaveDays" placeholder="Sick Leave Days" size="32" title="Sick Leave Days" label="Sick Leave Days"><br>    </td>
+         </tr>
+         <tr>
+            <td val="" ign="top"><input type="text" class="form-control" name="maternityLeaveDays" placeholder="Maternity Leave Days" size="32" title="Maternity Leave Days" label="Maternity Leave Days"><br>    </td>
+            <td val="" ign="top"><input type="text" class="form-control" name="unpaidLeaveDays" placeholder="Unpaid Leave Days" size="32" title="Unpaid Leave Days" label="Unpaid Leave Days"><br>    </td>
+         </tr>
+         <tr>
+            <td val="" ign="top"><input type="text" class="form-control" name="studyLeaveDays" placeholder="Study Leave Days" size="32" title="Study Leave Days" label="Study Leave Days"><br>    </td>
+            <td val="" ign="top"><input type="text" class="form-control" name="paternityLeaveDays" placeholder="Paternity Leave Days" size="32" title="Paternity Leave Days" label="Paternity Leave Days"><br>    </td>
+         </tr>
+         <tr>
+            <td val="" ign="top"><input type="text" class="form-control" name="casualLeaveDays" placeholder="Casual Leave Days" size="32" title="Casual Leave Days" label="Casual Leave Days"><br>    </td>
+            <td val="" ign="top"><input type="text" class="form-control" name="examLeaveDays" placeholder="Exam Leave Days" size="32" title="Exam Leave Days" label="Exam Leave Days"><br>    </td>
+         </tr>
+         <tr>
+             <td>
+                <label>Attach handover note:</label>
+                <input class="form-control" type=file name="handoverNote" data-dir="handover" />
+             </td>
+         </tr>
+      </tbody>
+   </table>
+   <p></p>
+   <div id="buttonContainer"><a class="btn btn-primary" onclick="submitLeaveRequest()">Submit My Request</a></div>
+   <p></p>
+</form>
+

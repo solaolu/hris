@@ -1,0 +1,41 @@
+ <form id="appraisalStartForm">
+     <div class="card">
+     <div class="card-header"><strong>Appraisal Details</strong></div>
+     <div class="card-body">
+     <div class="row">
+         <div class="col-md-6 form-group">
+             <label>Date of Last Appraisal:</label><br />
+             <input name="last_appraisal_date" class="form-control date-picker" id="last_appraisal" type="text" value="" />
+         </div>
+         <div class="col-md-6 form-group">
+             <label>Appraisal Assesor:</label><br />
+             <input name="assessor" id="assessor" class="form-control" type="text" value="" />
+         </div>
+         <div class="col-md-6 form-group">
+             <label>Duration in Current Employment:</label><br />
+             <input name="employ_duration" id="service_duration" class="form-control" type="text" value="" />
+         </div>
+         <div class="col-md-6 form-group">
+              <label>Duration in Current Role:</label><br />
+              <input name="job_duration" id="current_tenure" type="text" class="form-control" value="" />
+         </div>
+     </div>
+     </div>
+     </div>
+     <div class="card">
+     <div class="card-header"><strong>Generic Performance Evaluation::</strong></div>
+     <div class="card-body">
+     <div class="row">
+     {{each object}}
+         <div class="col-md-6" style="display: inline-grid;">
+             <div class="form-group" style="display: inline-grid;  vertical-align:bottom;">
+             <lable>${gpeID}</lable>
+             <textarea name="gpe${serialNumber}" class="form-control"></textarea>
+             </div>
+         </div>
+     {{/each}}
+     </div>
+     </div>
+     </div>
+     <a class="btn btn-primary btn--icon-text" onclick="step2()">Next &nbsp;&nbsp;<i class="zmdi zmdi-arrow-forward"></i></a>
+ </form>

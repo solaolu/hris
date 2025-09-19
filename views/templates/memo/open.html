@@ -1,0 +1,61 @@
+<div class="listview listview--bordered listview--hover">
+                            <div class="listview__item">
+                                <div class="listview__content">
+                                    <div class="listview__heading">${subject}</div>
+                                    <p><strong>Sent by:</strong>&nbsp;${sender}</p>
+                                </div>
+                            </div>
+
+                            <div class="listview__item">
+                                <div class="listview__content">
+                                    <div class="listview__heading">To: ${recipients}</div>
+                                    <p>Cc: ${cc}</p>
+                                </div>
+                            </div>
+                            <a class="listview__item" style="${attachments==''?'display:none;':''}" href="${attachments}">
+                                <div class="listview__content">
+                                    <div class="listview__heading">Attachments available</div>
+                                    <p><i class="zmdi zmdi-attachment-alt"></i>&nbsp;click to download</p>
+                                </div>
+                            </a>
+                            
+                            <div class="listview__item">
+                                <div class="listview__content">
+                                    <div class="listview__heading"></div>
+                                    <p style="white-space: normal;">${message}</p>
+                                </div>
+                            </div>
+                            
+                            <div class="listview__item" id="MemoAction">
+                                <div class="listview__content">
+                                    <div class="listview__heading">Your Response</div>
+                                    <div class="row">
+                                    <div class="col-md-5">
+                                    <p>&nbsp;</p>
+                                    <form id="memo-process">
+                                       <input type="hidden" name="memoID" value="${ID}"  />
+                                            <div class="form-group">
+                                                <label>Remark</label>
+                                                <textarea class="form-control" cols=50 rows=10 name="remark"></textarea>
+                                            </div>
+                                    </form>
+                                    <p><a class='btn btn-success' href=# onclick='process(1)'>Approve</a>&nbsp;<a class='btn btn-danger' href=# onclick='process(0)'>Disapprove</a></p>
+                                    </div>
+                                    <div class="col-md-7">
+                                       <p>Other response(s)</p>
+                                        <table id="approvalstmpl" class="table table-responsive table-sm table-striped">
+                                            <tr id="approvalstmpl-rows">
+                                                <td>${staffname}</td>
+                                                <td>${approval}
+                                                    <p><cite>${remark}</cite></p>
+                                                </td>
+                                                <td>${date}</td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="clearfix mb-3"></div>
+                        </div>

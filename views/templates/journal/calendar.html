@@ -1,0 +1,112 @@
+<div class="content__inner">
+                    <header class="content__title content__title--calendar">
+                        <h1>Calendar</h1>
+                        <small>Click on the day to add a task for that day. Tasks assigned by your Line Manager will also appear on your calender.</small>
+
+                        <div class="actions actions--calendar">
+                            <a href="" class="actions__item actions__calender-prev"><i class="zmdi zmdi-long-arrow-left"></i></a>
+                            <a href="" class="actions__item actions__calender-next"><i class="zmdi zmdi-long-arrow-right"></i></a>
+                            <i title="Daily View" class="actions__item actions__item--active zmdi zmdi-view-day" data-calendar-view="basicDay"></i>
+                            <i title="Weekly View" class="actions__item zmdi zmdi-view-week" data-calendar-view="basicWeek"></i>
+                            <i title="Monthly View" class="actions__item zmdi zmdi-view-comfy" data-calendar-view="month"></i>
+                        </div>
+                    </header>
+
+                    <div class="calendar card"></div>
+
+                    <!-- Add new task -->
+                    <div class="modal fade" id="new-event" data-backdrop="static" data-keyboard="false">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title">New Task</h5>
+                                </div>
+                                <div class="modal-body">
+                                    <form id="taskForm" class="new-event__form">
+                                        <div class="form-group">
+                                            <input type="text" name="toDo" class="form-control new-event__title" placeholder="Task Title">
+                                            <i class="form-group__bar"></i>
+                                        </div>
+                                        <div class="form-group">
+                                            <textarea name="remarks" class="form-control new-event__description textarea-autosize" placeholder="Task Desctiption/Remark"></textarea>
+                                            <i class="form-group__bar"></i>
+                                        </div>
+                                        <div id="assignees" class="form-group">
+                                           <label>Assign to: <em>(ignore if it is your task)</em></label>
+                                            <select name="assignees" class="select2 stafflist" multiple>
+                                            </select>
+                                            <i class="form-group__bar"></i>
+                                         </div>
+                                        <input name="startDate" type="hidden" class="new-event__start" />
+                                        <input name="endDate" type="hidden" class="new-event__end" />
+                                    </form>
+                                </div>
+
+                                <div class="modal-footer">
+                                    <button type="submit" class="btn btn-link new-event__add">Add Task</button>
+                                    <button type="button" class="btn btn-link" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- update task -->
+                    <div class="modal fade" id="edit-event" data-backdrop="static" data-keyboard="false">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-body">
+                                    <form id="taskEditForm" class="edit-event__form">
+                                        <div class="form-group">
+                                            <input type="text" readonly="readonly" class="form-control edit-event__title" placeholder="Event Title">
+                                            <i class="form-group__bar"></i>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <textarea readonly="readonly" class="form-control edit-event__description textarea-autosize" placeholder="Event Desctiption"></textarea>
+                                            <i class="form-group__bar"></i>
+                                        </div>
+                                        
+                                        <div class="">
+                                          <p>Task Status:</p>
+                                          <div class="row" data-toggle="buttons">
+                                           <div class="col-md-3 btn-group btn-group--colors">
+                                               <label class="btn btn-sm active">
+                                                   <input type="radio" name="status" autocomplete="off" checked="" value="Not Started"><span>Not Started</span>
+                                               </label>
+                                            </div>
+                                           <div class="col-md-3 btn-group btn-group--colors">
+                                               <label class="btn btn-sm bg-blue">
+                                                   <input type="radio" name="status" autocomplete="off" value="In Progress"><span>In Progress</span>
+                                                </label>
+                                            </div>
+                                           <div class="col-md-3 btn-group btn-group--colors">
+                                               <label class="btn btn-sm bg-teal">
+                                                   <input type="radio" name="status" autocomplete="off" value="Completed"><span>Completed</span>
+                                                </label>
+                                            </div>
+                                           <div class="col-md-3 btn-group btn-group--colors">
+                                               <label class="btn btn-sm bg-red">
+                                                   <input type="radio" name="status" autocomplete="off" value="Cancelled/On hold"><span>Cancelled/On hold</span>
+                                                </label>
+                                            </div>
+                                            </div>
+                                        </div>
+                                        <p>&nbsp;</p>
+                                        <div class="form-group">
+                                            <textarea name="comments" class="form-control edit-event__comment textarea-autosize" placeholder="Comments on progress"></textarea>
+                                            <i class="form-group__bar"></i>
+                                        </div>
+                                        <input name="taskID" type="hidden" class="edit-event__id">
+                                    </form>
+                                </div>
+
+                                <div class="modal-footer">
+                                    <button class="btn btn-link" data-calendar="update">Update</button>
+                                    <button class="btn btn-link" data-calendar="delete">Delete</button>
+                                    <button class="btn btn-link" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                        

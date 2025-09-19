@@ -1,0 +1,73 @@
+<h5>BALANCE SCORECARD</h5>
+<P>&nbsp;</P>
+<div class="row">
+ <div class="col-md-5 col-sm-7 col-xs-8"><p> Please complete your KPI ratings and submit to appraise yourself. Once you submit your appraisal details will be sent to your line manager for approval.</p></div>
+ <div class="col-md-4 col-sm-2 col-xs-0">&nbsp;</div>
+ <div class="col-md-3 col-sm-3 col-xs-4">
+     <div class="card">
+        <div class="card-header">
+            Score Summary
+        </div>
+         <div class="card-body">
+             <center><h3 id="score_summary"></h3></center>
+         </div>
+     </div>
+ </div>
+</div> 
+
+  <form id="kpiForm">
+  <input type="hidden" name="kpiSummaryID" value="${code}" />
+  <input type="hidden" name="period" value="${message}" />
+  <input type="hidden" name="score_summary" />
+        <table  class="table table-striped table-bordered" cellpadding="3" cellspacing="1">
+          <tbody class="kpi-tbody">
+            <tr >
+              <td align="center">KPI</td>
+              <!--<td align="center">&nbsp;</td>-->
+              <td align="center">WEIGHT</td>
+              <td align="center" cl ass="lm_rating_col">LM'S<br/>RATING</td>
+              <td align="center">RATE<br><nobr>(1-10)</nobr></td>
+              <td align="center">SCORE</td>
+              <td align="center">MAX</td>
+            </tr>
+          </tbody>
+        </table>
+  <a class="save_button btn btn-primary" onclick="saveKPI(false)">Save Ratings</a>&nbsp;<a onclick="saveKPI(true)" class="save_button btn btn-dark">Save & Send to Manager</a>
+  <div class="lm_rating_col">
+     <p>&nbsp;</p>
+     <div class="card">
+         <div class="card-header"><h5>Line Manager's Review</h5></div>
+         <div class="card-body">
+             <p>
+                 <strong>Strenght(s) Demonstrated:</strong><br>
+                 ${summary.strengthDemonstrated}
+             </p>
+             <hr size=1 />
+             <p>
+                 <strong>Improve On:</strong><br />
+                 ${summary.improveOn.replace("\n", "<br />")}
+             </p>
+             <hr size=1 />
+             <p>
+                 <strong>Line Manager's Comment</strong><br />
+                 ${summary.comment}
+             </p>
+         </div>
+     </div>
+     
+     <div class="my_response card">
+         <div class="card-header"><h5>Response to Line Manager's Review</h5></div>
+         <div class="card-body">
+             <p>Comments</p>
+             <textarea rows=5 name="myComment" class="form-control" />
+             <p>&nbsp;</p>
+             <label><input type="radio" name="myResponse" value="Agree" checked="checked" />&nbsp;I agree with the review</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label><input type="radio" name="myResponse" value="Disagree" />&nbsp;I disagree with the review</label>
+             <p>&nbsp;</p>
+             <a class="btn btn-primary" onclick="respond()">Submit My Response</a>
+     </div>
+     </div>
+     
+     
+     
+  </div>
+  </form>

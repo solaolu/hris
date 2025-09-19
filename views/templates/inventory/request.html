@@ -1,0 +1,69 @@
+<form id="inventoryRequestForm">
+        <table cellpadding="3" width="50%" cellspacing="0">
+            <tbody><tr><td colspan="2" align="">
+                <div class="form-group">
+                    Project Name:<br /><input class="form-control" name="projectName" type="text">
+                </div>
+                </td></tr>
+            <tr>
+                <td>Items Required:</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <table id="itemsGrid" class="table table-striped table-bordered table-sm">
+                       <thead>
+                           <th>Item</th><th>Quantity</th><th>Return Date</th><th><a class="btn btn-dark btn-block btn-sm" data-toggle="modal" href="#itemModal">ADD</a></th>
+                       </thead>
+                        <tbody>
+                            <tr><td colspan="4">No items selected. <a data-toggle="modal" href="#itemModal">Add an item.</a></td></tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+            <tr><td colspan="2" align="">
+                <div class="form-group">
+                Pick Up Person:<br /><input class="form-control" type="text" name="collectionBy"></div></td></tr>
+                <tr><td colspan="2" align=""><div class="form-group">Pick Up Time:<br /><input class="form-control datetime-picker" type="text" name="collectionTime"></div></td></tr>
+                <tr><td colspan="2"><div class="form-group">Other remarks/comments<br /><textarea class="form-control" name="requestPurpose" cols="35" rows="5"></textarea></div></td></tr>
+            </tbody>
+        </table>
+        <p>&nbsp;</p>
+        <div id="buttonContainer">
+            <a class="btn btn-primary" onclick="inventoryRequest()">Submit My Request</a>
+        </div>
+</form>
+                    <div class="modal fade" id="itemModal" data-keyboard="false">
+                        <div class="modal-dialog modal-md">
+                            <div class="modal-content">
+                                <div class="modal-header"><h5>Add Required Item</h5></div>
+                                <div class="modal-body">
+                                    <form id="itemAddForm" class="">
+                                        <div class="form-group">
+                                            Item:<br />
+                                            <select name="itemID" id="items" class="select2">
+                                                {{each object}}
+                                                <option value="${ID}" data-count="${itemInStore}">${itemName} (${itemInStore} available)</option>
+                                                {{/each}}
+                                            </select>
+                                            <i class="form-group__bar"></i>
+                                        </div>
+                                        <div class="form-group">
+                                            Quantity:<br />
+                                            <input id="itemQty" name="itemQty" type="number" class="form-control">
+                                            <i class="form-group__bar"></i>
+                                        </div>
+                                        <div class="form-group">
+                                            Expected Return Date:<br />
+                                            <input type="text" class="form-control date-picker" readonly="readonly" name="itemExpectedReturnDate" />
+                                            <i class="form-group__bar"></i>
+                                        </div>
+                                    </form>
+                                </div>
+
+                                <div class="modal-footer">
+                                    <button class="btn btn-link" onclick="addItem()" >Add Item</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>

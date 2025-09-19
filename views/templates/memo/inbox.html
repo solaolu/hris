@@ -1,0 +1,27 @@
+                    <div class="table-responsive">
+                            <table id="data-table" class="table data-table">
+                                <thead>
+                                    <tr>
+                                       <th></th>
+                                        <th>Sent By</th>
+                                        <th>Subject</th>
+                                        <th>Message</th>
+                                        <!--<th>Required Approvers</th>
+                                        <th>Other Recipients</th>-->
+                                        <th>Date</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr style="cursor: pointer; ${pcount==0?'font-weight:bold':''}" onclick="openMemo(${ID})">
+                                       <td><i class="zmdi ${pcount==0? 'zmdi-email':'zmdi-spellcheck'}"></i></td>
+                                        <td>&nbsp;&nbsp;${sender}</td>
+                                        <td>${subject}</td>
+                                        <td>${mini_message}...</td>
+                                        <!--<td>${recipients}</td>
+                                        <td>${cc}</td>-->
+                                        <td>${memo_date}</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+             

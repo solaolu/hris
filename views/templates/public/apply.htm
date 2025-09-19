@@ -1,0 +1,337 @@
+<form method=post action="" id="jobApplicationForm">
+   <input type="hidden" value="<?php echo $_GET['vCode']; ?>" name="vacancyCode" />
+    <div class="card">
+        <div class="card-header">Personal Information</div>
+        <div class="card-body">
+<div class="container">
+ <div class="row">
+       <div class="col-md-6" data-type="varchar" data-decimals="50">
+    <select name="title" id="title" class="select2">
+      <option value=" ">Title</option>
+      <option value="Miss">Miss</option>
+      <option value="Mr.">Mr.</option>
+      <option value="Mrs.">Mrs.</option>
+      <option value="Dr.">Dr.</option>
+    </select></div>
+    <div class="col-md-6">
+        <input name="fullname" type="text" class="form-control" id="fullname" placeholder="Full Name" value="" size="40" data-type="CHAR" data-maxlength="255" />
+    </div>
+ </div>
+ <div class="row">
+     <div class="col-md-6"data-type="varchar" data-decimals="20">
+      <select name="gender" id="gender" class="select2">
+        <option value=" ">Gender</option>
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+        <option value="Undisclosed">Not disclosed</option>
+        </select>
+    </div>
+    <div class="col-md-6"data-type="date" data-decimals="0">
+      <input type="text" name="dob" id="dob" placeholder="Date of Birth" value="" size="10" data-type="DATE" class="form-control date-picker"/></div>
+ </div>
+    
+<div class="row">    
+     <div class="col-md-6">
+      <select name="marital_status" id="marital_status" class="select2">
+        <option value=" ">Marital Staus</option>
+        <option value="Single">Single</option>
+        <option value="Married">Married</option>
+        <option value="Divorced">Divorced</option>
+        <option value="Separated">Separated</option>
+        <option value="Not disclosed">Not disclosed</option>
+      </select></div>
+    <div class="col-md-6">
+      <select name="religion" id="religion" class="select2">
+        <option value=" ">Religion</option>
+        <option value="Christian">Christian</option>
+        <option value="Muslim">Muslim</option>
+        <option value="Other">Other</option>
+      </select>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-6">
+      <input name="NIN" type="text" class="form-control" id="NIN" placeholder="National Identification Number"  /></div>
+    <div class="col-md-6"data-type="varchar" data-decimals="100">
+      <select name="state_of_origin" id="state_of_origin" class="select2">
+        <option value="" selected="selected">State of Origin</option>
+        <option value="Abuja FCT">Abuja FCT</option>
+        <option value="Abia">Abia</option>
+        <option value="Adamawa">Adamawa</option>
+        <option value="Akwa Ibom">Akwa Ibom</option>
+        <option value="Anambra">Anambra</option>
+        <option value="Bauchi">Bauchi</option>
+        <option value="Bayelsa">Bayelsa</option>
+        <option value="Benue">Benue</option>
+        <option value="Borno">Borno</option>
+        <option value="Cross River">Cross River</option>
+        <option value="Delta">Delta</option>
+        <option value="Ebonyi">Ebonyi</option>
+        <option value="Edo">Edo</option>
+        <option value="Ekiti">Ekiti</option>
+        <option value="Enugu">Enugu</option>
+        <option value="Gombe">Gombe</option>
+        <option value="Imo">Imo</option>
+        <option value="Jigawa">Jigawa</option>
+        <option value="Kaduna">Kaduna</option>
+        <option value="Kano">Kano</option>
+        <option value="Katsina">Katsina</option>
+        <option value="Kebbi">Kebbi</option>
+        <option value="Kogi">Kogi</option>
+        <option value="Kwara">Kwara</option>
+        <option value="Lagos">Lagos</option>
+        <option value="Nassarawa">Nassarawa</option>
+        <option value="Niger">Niger</option>
+        <option value="Ogun">Ogun</option>
+        <option value="Ondo">Ondo</option>
+        <option value="Osun">Osun</option>
+        <option value="Oyo">Oyo</option>
+        <option value="Plateau">Plateau</option>
+        <option value="Rivers">Rivers</option>
+        <option value="Sokoto">Sokoto</option>
+        <option value="Taraba">Taraba</option>
+        <option value="Yobe">Yobe</option>
+        <option value="Zamfara">Zamfara</option>
+        <option value="Outside Nigeria">Outside Nigeria</option>
+      </select></div>
+</div>  
+<div class="row">
+    <div class="col-md-6">
+      <input name="hobby1" type="text" class="form-control" id="hobby1" placeholder="Hobby 1" /></div>
+    <div class="col-md-6">
+      <input name="hobby2" type="text" class="form-control" id="hobby2" placeholder="Hobby 2" /></div>
+</div>
+
+<div class="row">
+      <div class="col-md-6">
+    <input name="hobby3" type="text" class="form-control" id="hobby3" placeholder="Hobby 3" /></div>
+</div>  
+<div class="row">
+    <div class="col-md-6">
+    <input name="skillCapabilities1" type="text" class="form-control" id="skillCapabilities1" placeholder="Skill Capabilities 1" /></div>
+    <div class="col-md-6">
+    <input name="skillCapabilities2" type="text" class="form-control" id="skillCapabilities2" placeholder="Skill Capabilities 2" /></div>
+</div>
+  
+<div class="row">
+    <div class="col-md-6">
+      <input name="skillCapabilities3" type="text" class="form-control" id="skillCapabilities3" placeholder="Skill Capabilities 3" /></div>
+     <div class="col-md-6">
+      <input name="skillCapabilities4" type="text" class="form-control" id="skillCapabilities4" placeholder="Skill Capabilities 4" /></div> 
+</div>
+<div class="row">
+    <div class="col-md-6">
+    <input name="skillCapabilities5" type="text" class="form-control" id="skillCapabilities5" placeholder="Skill Capabilities 5" /></div>
+</div>
+           </div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-header">Contact Information</div>
+        <div class="card-body">
+           <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <input type="text" placeholder="Phone Number" name="phone_no" id="phone_no" class="form-control" />
+                </div>
+                <div class="col-md-6">
+                    <input type="text" placeholder="Alternate Phone Number" name="alt_phone_no" id="alt_phone_no" class="form-control" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <input type="text" placeholder="Email" name="email" id="email" class="form-control" />
+                </div>
+                <div class="col-md-6">
+                    <input type="text" placeholder="Alternate Email" name="alt_email" id="alt_email" class="form-control" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <input type="text" placeholder="Current Address" name="current_address" id="current_address" rows="5" class="form-control" />
+                </div>
+                <div class="col-md-6">
+                    <input type="text" placeholder="Mailing Address" name="mailing_address" id="mailing_address" class="form-control" />
+                </div>
+            </div>
+            </div>	
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-header">Educational Information</div>
+        <div class="card-body">
+            <div class="container">
+                <div class="row">
+                    <table id="educationalInfoGrid" width="100%" class="table-striped table-bordered table-sm">
+                       <thead>
+                           <th>Institution Attended</th><th>Qualification</th><th>Certification</th><th><a class="btn btn-dark btn-block btn-sm" data-toggle="modal" href="#educationalInfoModal">ADD</a></th>
+                       </thead>
+                        <tbody>
+                            <tr><td colspan="4">No detail provided. <a data-toggle="modal" href="#educationalInfoModal">Add Info</a></td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-header">Work Experience</div>
+        <div class="card-body">
+            <div class="container">
+                <div class="row">
+                    <table id="workExperienceGrid" width="100%" class="table-striped table-bordered table-sm">
+                       <thead>
+                           <th>Company Name</th><th>Start Date</th><th>End Date</th><th>Contact Name</th><th>Contact Email</th><th>Contact Phone Number</th><th><a class="btn btn-dark btn-block btn-sm" data-toggle="modal" href="#workExperienceModal">ADD</a></th>
+                       </thead>
+                        <tbody>
+                            <tr><td colspan="7">No detail provided. <a data-toggle="modal" href="#workExperienceModal">Add Info</a></td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-header">References</div>
+        <div class="card-body">
+            <div class="container">
+            
+                <div class="row">
+                    <table id="referenceInfoGrid" width="100%" class="table-striped table-bordered table-sm">
+                       <thead>
+                           <th>Name of Referee</th><th>Company</th><th>Residential Address</th><th>Phone Number</th><th>Email</th><th><a class="btn btn-dark btn-block btn-sm" data-toggle="modal" href="#referenceInfoModal">ADD</a></th>
+                       </thead>
+                        <tbody>
+                            <tr><td colspan="6">No detail provided. <a data-toggle="modal" href="#referenceInfoModal">Add Info</a></td></tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="row"></div>
+                <div class="row"></div>
+            </div>
+        </div>
+    </div>
+    <div><a class="btn btn-success" onclick="submitJobApplication()">Submit My Application</a></div>
+</form>
+                       <!--dialogs-->
+                        <div class="modal fade" id="educationalInfoModal" data-keyboard="false">
+                        <div class="modal-dialog modal-md">
+                            <div class="modal-content">
+                                <div class="modal-header"><h5>Add Education Details</h5></div>
+                                <div class="modal-body">
+                                    <form id="educationalInfoForm" met hod="post">
+                                       <table cellpadding="4" width="100%" cellspacing="0">
+                                          <tbody>
+                                             <tr>
+                                                <td val="" ign="top" colspan="4">Institution Attended<br><input type="text" name="schoolAttended" id="schoolAttended" class="form-control" />   </td>
+                                             </tr>
+                                             <tr>
+                                                <td val="" ign="top" colspan="4">
+                                                   Qualification<br><input type="text" name="qualification" id="qualification" class="form-control" />
+                                                </td>
+                                             </tr>
+                                             <tr>
+                                                <td val="" ign="top" colspan="4">Certification<input type="text" class="form-control" name="certification" id="certification" /></td>
+                                             </tr>
+                                          </tbody>
+                                       </table>
+                                       <p></p>
+                                       <p></p>
+                                    </form>
+                                </div>
+
+                                <div class="modal-footer">
+                                    <a class="btn btn-link" onclick="addApplicationItem('educationalInfo')" >&lt;&lt; Add &gt;&gt;</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="modal fade" id="workExperienceModal" data-keyboard="false">
+                        <div class="modal-dialog modal-md">
+                            <div class="modal-content">
+                                <div class="modal-header"><h5>Add Work Experience</h5></div>
+                                <div class="modal-body">
+                                    <form id="workExperienceForm" method="post">
+                                       <table cellpadding="4" width="100%" cellspacing="0">
+                                          <tbody>
+                                             <tr>
+                                                <td val="" ign="top" colspan="2" width="100%">Company Name<br><input type="text" name="companyName" id="companyName" class="form-control" />   </td>
+                                             </tr>
+                                             <tr>
+                                                <td val="" ign="top" >
+                                                   Start Date<br><input type="text" name="startDate" id="startDate" class="form-control date-picker" />
+                                                </td>
+                                                <td val="" ign="top" >
+                                                   End Date<br><input type="text" name="endDate" id="endDate" class="form-control date-picker" />
+                                                </td>
+                                             </tr>
+                                             <tr>
+                                                <td val="" ign="top" colspan="2" width="100%">Contact Name<br>
+                                                <input type="text" class="form-control" name="contactName" id="contactName" />
+                                                </td>
+                                             </tr>
+                                             <tr>
+                                                 <td colspan="2" width="100%">
+                                                     Contact Email<br>
+                                                     <input type="text" class="form-control" name="contactEmail" id="contactEmail" />
+                                                 </td>
+                                             </tr>
+                                             <tr>
+                                                 <td colspan="2" width="100%">
+                                                     Contact Phone Number<br>
+                                                     <input type="text" class="form-control" name="contactPhoneNo" id="contactPhoneNo" />
+                                                 </td>
+                                             </tr>
+                                          </tbody>
+                                       </table>
+                                       <p></p>
+                                       <p></p>
+                                    </form>
+                                </div>
+
+                                <div class="modal-footer">
+                                    <a class="btn btn-link" onclick="addApplicationItem('workExperience')" >&lt;&lt; Add &gt;&gt;</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="modal fade" id="referenceInfoModal" data-keyboard="false">
+                        <div class="modal-dialog modal-md">
+                            <div class="modal-content">
+                                <div class="modal-header"><h5>Add Reference Details</h5></div>
+                                <div class="modal-body">
+                                    <div id="referenceInfoForm" method="post">
+                                       <table cellpadding="4" width="100%" cellspacing="0">
+                                          <tbody>
+                                             <tr>
+                                                <td val="" ign="top" colspan="4">Name of Referee<br><input type="text" name="refereeName" id="refereeName" class="form-control" />   </td>
+                                             </tr>
+                                             <tr>
+                                                <td val="" ign="top" colspan="4">
+                                                   Company<br><input type="text" name="company" id="company" class="form-control" />
+                                                </td>
+                                             </tr>
+                                             <tr>
+                                                <td val="" ign="top" colspan="4">Residential Address<input type="text" class="form-control" name="residentialAddress" id="residentialAddress" /></td>
+                                             </tr>
+                                             <tr>
+                                                <td val="" ign="top" colspan="4">Phone Number<input type="text" class="form-control" name="refereePhoneNo" id="refereePhoneNo" /></td>
+                                             </tr>
+                                             <tr>
+                                                <td val="" ign="top" colspan="4">Email Address<input type="text" class="form-control" name="refereeEmail" id="refereeEmail" /></td>
+                                             </tr>
+                                          </tbody>
+                                       </table>
+                                    </div>
+                                </div>
+
+                                <div class="modal-footer">
+                                    <a class="btn btn-link" onclick="addApplicationItem('referenceInfo')" >&lt;&lt; Add &gt;&gt;</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/dialogs-->

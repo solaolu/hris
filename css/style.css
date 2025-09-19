@@ -1,0 +1,59 @@
+.logo-box {
+    padding:5px;
+    background: #fff;
+    margin-bottom: 10px;
+}
+
+.switch-label {
+    margin-left: 20px;
+    position: relative;
+    top: -6px;
+}
+
+#template {
+    display: none;
+}
+
+.table-borderless > tbody > tr > td,
+.table-borderless > tbody > tr > th,
+.table-borderless > tfoot > tr > td,
+.table-borderless > tfoot > tr > th,
+.table-borderless > thead > tr > td,
+.table-borderless > thead > tr > th {
+    border: none;
+}
+
+div.badge-translucent {
+    padding: 7px;
+    font-weight: bold;
+    margin-top: 7px;
+    border-top: 1px dashed #fff;
+}
+
+.badge-translucent {
+    /*background: #fff;
+    opacity: .6;
+    color: #000;*/
+}
+
+label.btn span {
+    margin-left: 30px;
+}
+
+td.lm_rating_col {
+ background-color: rgba(255,255,255,.04);   
+ color: #ffc107;
+ font-weight: bold;
+}
+
+.hide {
+    display: none;
+}
+
+.select2-container, .form-control{
+    margin-bottom: 13px;
+}
+
+.flatpickr-calendar.open {
+    z-index: 999999999;
+}

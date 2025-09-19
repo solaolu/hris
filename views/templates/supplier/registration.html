@@ -1,0 +1,418 @@
+<form id="supplierRegistrationForm" method="post">
+   <h5>SUPPLIER REGISTRATION</h5>
+   <p>&nbsp;</p>
+   <table cellpadding="4" width="100%" cellspacing="0" class="table table-responsive table-borderless">
+      <tbody>
+         <tr>
+            <td width="50%">Company Name<br><input type="text" class="form-control" name="companyName" value="" size="32" title="Company Name" label="Company Name"><br>    </td>
+            <td width="50%">&nbsp;</td>
+         </tr>
+         <tr>
+            <td val="" ign="top">
+               <p>Office Address<br><textarea class="form-control" name="officeAddress" cols="35" rows="6"></textarea></p>
+            </td>
+         </tr>
+         <tr>
+            <td val="" ign="top">Company Phone<br><input type="text" class="form-control" name="companyPhone" value="" size="32" title="Company Phone" label="Company Phone"><br>    </td>
+            <td val="" ign="top">Company Email<br><input type="text" class="form-control" name="companyEmail" value="" size="32" title="Company Email" label="Company Email"><br>    </td>
+         </tr>
+         <tr>
+            <td val="" ign="top">Contact Person<br><input type="text" class="form-control" name="contactPerson" value="" size="32" title="Contact Person" label="Contact Person"><br>    </td>
+            <td val="" ign="top">Contact Person Title<br><input type="text" class="form-control" name="contactPersonTitle" value="" size="32" title="Contact Person Title" label="Contact Person Title"><br>    </td>
+         </tr>
+         <tr>
+            <td val="" ign="top">Contact Person Phone<br><input type="text" class="form-control" name="contactPersonPhone" value="" size="32" title="Contact Person Phone" label="Contact Person Phone"><br>    </td>
+         </tr>
+         <tr>
+            <td val="" ign="top">Business Type<br><input type="text" class="form-control" name="businessType" value="" size="32" title="Business Type" label="Business Type"><br>    </td>
+            <td val="" ign="top">Business Nature<br><input type="text" class="form-control" name="businessNature" value="" size="32" title="Business Nature" label="Business Nature"><br>    </td>
+         </tr>
+         <tr>
+            <td val="" ign="top">Year Established<br><input type="text" class="form-control" name="yearEstablished" value="" size="32" title="Year Established" label="Year Established"><br>    </td>
+            <td val="" ign="top">Employee Count<br><input type="text" class="form-control" name="employeeCount" value="" size="32" title="Employee Count" label="Employee Count"><br>    </td>
+         </tr>
+         <tr>
+            <td val="" ign="top">RCNO<br><input type="text" class="form-control" name="RCNO" value="" size="32" title="RCNO" label="RCNO"><br>    </td>
+            <td val="" ign="top">Certificateof Incorporation<br><input type="file" class="form-control" name="certificateofIncorporation" value="" size="32" title="Certificateof Incorporation" label="Certificateof Incorporation"><br>    </td>
+         </tr>
+         <tr>
+            <td val="" ign="top">Tax No<br><input type="text" class="form-control" name="taxNo" value="" size="32" title="Tax No" label="Tax No"><br>    </td>
+            <td val="" ign="top">VAT ID No<br><input type="text" class="form-control" name="vatIDNo" value="" size="32" title="Vat IDNo" label="Vat IDNo"><br>    </td>
+         </tr>
+         <tr>
+             <td colspan="">
+                 <strong>Annual Value of Total Sales for the last 3 Years:</strong>
+                 <table class="table-borderless">
+                     <tr>
+                        <th></th>
+                         <th>Year</th>
+                         <th>Total Sales Value</th>
+                     </tr>
+                     <tr>
+                       <td>1. </td>
+                        <td val="" ign="top"><input type="text" class="form-control" name="totalSales1Year" value="" size="32" title="Total Sales1Year" label="Total Sales1Year">  </td>
+                        <td val="" ign="top"><input type="text" class="form-control" name="totalSales1Value" value="" size="32" title="Total Sales1Value" label="Total Sales1Value"></td>
+                     </tr>
+                     <tr>
+                        <td>2. </td>
+                        <td val="" ign="top"><input type="text" class="form-control" name="totalSales2Year" value="" size="32" title="Total Sales2Year" label="Total Sales2Year">   </td>
+                        <td val="" ign="top"><input type="text" class="form-control" name="totalSales2Value" value="" size="32" title="Total Sales2Value" label="Total Sales2Value"></td>
+                     </tr>
+                     <tr>
+                        <td>3. </td>
+                        <td val="" ign="top"><input type="text" class="form-control" name="totalSales3Year" value="" size="32" title="Total Sales3Year" label="Total Sales3Year">    </td>
+                        <td val="" ign="top"><input type="text" class="form-control" name="totalSales3Value" value="" size="32" title="Total Sales3Value" label="Total Sales3Value"> </td>
+                    </tr>
+                 </table>
+             </td>
+         </tr>
+         <tr>
+             <td colspan="2">
+                 <strong>Bank Details:</strong>
+                 <br />
+                 &nbsp;
+                    <table id="supplierBankGrid" width="100%" class="table-striped table-bordered table-sm">
+                       <thead>
+                           <th>Bank Name</th><th>Account No:</th><th>Bank Account Name</th><th><a class="btn btn-dark btn-block btn-sm" data-toggle="modal" href="#supplierBankModal">ADD BANK</a></th>
+                       </thead>
+                        <tbody>
+                            <tr><td colspan="4">No bank specified. <a data-toggle="modal" href="#supplierBankModal">Add Bank.</a></td></tr>
+                        </tbody>
+                    </table>
+                    <p>&nbsp;</p>
+             </td>
+         </tr>
+         <tr>
+            <td val="" ign="top">Expected Turnover<br><input type="text" class="form-control" name="expectedTurnover" value="" size="32" title="Expected Turnover" label="Expected Turnover"><br>    </td>
+         </tr>
+         <tr>
+            <td val="" ign="top">Finance Source<br><input type="text" class="form-control" name="financeSource" value="" size="32" title="Finance Source" label="Finance Source"><br>    </td>
+         </tr>
+         <tr>
+             <td colspan="2">
+                 <strong>List below up to five (5) of your Core Goods/Services offered (Authorized agents and Traders must submit proof or certificate(s) from
+                 manufacturers or dealers that they are authorized to deal with the products:</strong>
+                 <br />
+                 &nbsp;
+                    <table id="supplierCapabilityGrid" width="100%" class="table-striped table-bordered table-sm">
+                       <thead>
+                           <th>Service/Good</th><th>Description</th><th>Authorized Agent/Manufacturer</th><th><a class="btn btn-dark btn-block btn-sm" data-toggle="modal" href="#supplierCapabilityModal">ADD</a></th>
+                       </thead>
+                        <tbody>
+                            <tr><td colspan="4">No detail provided. <a data-toggle="modal" href="#supplierCapabilityModal">Add Capability</a></td></tr>
+                        </tbody>
+                    </table>
+                 <p>&nbsp;</p>
+             </td>
+         </tr>
+         
+         <tr>
+             <td colspan="2">
+                <p>&nbsp;</p>
+                 <strong>For your core goods / services specified in the above list, please provide details of the largest sales in the last financial year including name of
+                    company, name of contact person, address and Tel/ e-mail/fax number of customer and value of sales.</strong>
+                 <br />
+                 &nbsp;
+                    <table id="supplierSalesGrid" width="100%" class="table-striped table-bordered table-sm">
+                       <thead>
+                           <th>Good/Service</th><th>Company</th><th>Contact Person</th><th><a class="btn btn-dark btn-block btn-sm" data-toggle="modal" href="#supplierSalesModal">ADD</a></th>
+                       </thead>
+                        <tbody>
+                            <tr><td colspan="4">No capability added. <a data-toggle="modal" href="#supplierSalesModal">Add Sale Details</a></td></tr>
+                        </tbody>
+                    </table>
+                    <p>&nbsp;</p>
+             </td>
+         </tr>
+         <tr>
+             <td colspan="2">
+                <p>&nbsp;</p>
+                 <strong>Recent Contracts with Connect Marketing / or any other organization:</strong>
+                 <br />
+                 &nbsp;
+                    <table id="supplierExperienceGrid" width="100%" class="table-striped table-bordered table-sm">
+                       <thead>
+                           <th>Organisation</th><th>Value</th><th>Year</th><th>Good/Service Supplied</th><th><a class="btn btn-dark btn-block btn-sm" data-toggle="modal" href="#supplierExperienceModal">ADD</a></th>
+                       </thead>
+                        <tbody>
+                            <tr><td colspan="5">No capability added. <a data-toggle="modal" href="#supplierExperienceModal">Add Contract</a></td></tr>
+                        </tbody>
+                    </table>
+                    <p>&nbsp;</p>
+             </td>
+         </tr>
+         <tr>
+            <td val="" ign="top"><br>
+               <label><input type="checkbox" name="managedInternationalProjects" value="1">&nbsp;&nbsp;Managed International Projects</label><br>    
+            </td>
+            <td val="" ign="top">Location International Project<br><input type="text" class="form-control" name="locationInternationalProject" value="" size="32" title="Location International Project" label="Location International Project"></td>
+          </tr>
+          <tr>
+            <td val="" ign="top">
+               <p>Legal Disputes<br><textarea class="form-control" name="legalDisputes" placeholder="type in here..." cols="35" rows="6"></textarea></p>
+            </td>
+            <td val="" ign="top">
+               <p>Professional Membership<br><textarea class="form-control" name="professionalMembership" placeholder="type in here..." cols="35" rows="6"></textarea></p>
+            </td>
+         </tr>
+         <tr>
+            <td val="" ign="top">On high risk procurement / project, in some cases, Connect Marketing may require a supplier to provide Connect Marketing with a
+            Performance Bond (to guarantee fulfillment of terms and conditions) when contracts are awarded. Please indicate the maximum amount
+            of Performance Bond your company is able to support<br><input type="text" class="form-control" name="performanceBondLimit" value="" size="32" title="Performance Bond Limit" label="Performance Bond Limit"><br>    </td>
+         </tr>
+         <tr>
+             <td colspan="2">
+                 <p>Please attach i) a listing of a minimum of three (3) reference sources for services rendered by your firm within the last 12 months and ii) original of
+                    recommendation letter from the reference sources describing the nature of services rendered by your firm. The recommendation letter must be prepared
+                    in the reference sources’ letterhead and signed by their representatives, who awarded an order to your firm or who administered your contract.
+                    Please also indicate Tel / e-mail address and contact person for your reference sources so that Connect Marketing can contact them as and when
+                    required.
+                </p>
+                    <table id="supplierReferenceGrid" width="100%" class="table-striped table-bordered table-sm">
+                       <thead>
+                           <th>Company Name</th><th>Company Address</th><th>Phone No</th><th><a class="btn btn-dark btn-block btn-sm" data-toggle="modal" href="#supplierReferenceModal">ADD</a></th>
+                       </thead>
+                        <tbody>
+                            <tr><td colspan="5">No references added. <a data-toggle="modal" href="#supplierReferenceModal">Add Reference</a></td></tr>
+                        </tbody>
+                    </table>
+                    <p>&nbsp;</p>
+             </td>
+         </tr>
+         <tr>
+             <td colspan="2">
+                 <p>Please provide links to pictures (Dropbox, Google Drive etc.) or website of previous jobs, social media handles
+                 <br><textarea class="form-control" name="linksToPreviousJobs" placeholder="type in here..." cols="35" rows="6"></textarea></p>
+             </td>
+         </tr>
+         <tr>
+            <td colspan="2">Please note, payment for service/Goods supplied is subject to receipt from our Clients. Please, indicate your acceptance to the payment
+            terms.<br>
+               <label><input type="checkbox" name="acceptPaymentTerms" value="1">&nbsp;&nbsp;Accept Payment Terms</label><br>    
+            </td>
+         </tr>
+         <tr>
+             <td colspan="2">
+                 <p>I, the undersigned, confirm that the information provided in this form is correct, and in the event of changes details will be provided as soon as possible:</p>
+                 <p><strong>Certified By</strong></p>
+             </td>
+         </tr>
+         <tr>
+            <td val="" ign="top">Name: <br><input type="text" class="form-control" name="certifiedBy" value="" size="32" title="Certified By" label="Certified By"><br>    </td>
+             <td>
+                 Designation:<br />
+                 <input type="text" class="form-control" name="certifierDesignation" value="" size="32" title="Designation" label="Designation"><br>
+             </td>
+         </tr>
+         <tr>
+             <td>
+                 Email<br />
+                 <input type="text" class="form-control" name="certifierEmail" value="" size="32" title="Email" />
+             </td>
+         </tr>
+         <tr>
+             <td>
+               <p>&nbsp;</p>
+               <div id="buttonContainer"><a class="btn btn-primary" onclick="registerSupplier()">Submit Details</a></div>
+            </td>
+         </tr>
+      </tbody>
+   </table>
+   <p></p>
+</form>
+
+                    <div class="modal fade" id="supplierBankModal" data-keyboard="false">
+                        <div class="modal-dialog modal-md">
+                            <div class="modal-content">
+                                <div class="modal-header"><h5>Add Bank Detail</h5></div>
+                                <div class="modal-body">
+                                    <form id="supplierBankForm" method="post">
+                                       <table cellpadding="4" width="100%" cellspacing="0">
+                                          <tbody>
+                                             <tr>
+                                                <td val="" ign="top">Bank Name<br><input type="text" class="form-control" name="bankName" value="" size="32" title="Bank Name" label="Bank Name"><br>    </td>
+                                              </tr>
+                                              <tr>
+                                                <td val="" ign="top">
+                                                   <p>Bank Address<br><textarea name="bankAddress" class="form-control" cols="35" rows="6"></textarea></p>
+                                                </td>
+                                             </tr>
+                                             <tr>
+                                                <td val="" ign="top" colspan="4">Bank Account No<br><input type="text" class="form-control" name="bankAccountNo" value="" size="32" title="Bank Account No" label="Bank Account No"><br>    </td>
+                                             </tr>
+                                             <tr>
+                                                <td val="" ign="top" colspan="4">Bank Account Name<br><input type="text" class="form-control" name="bankAccountName" value="" size="32" title="Bank Account Name" label="Bank Account Name"><br>    </td>
+                                             </tr>
+                                             <tr>
+                                                <td val="" ign="top">Bank Sort Code<br><input type="text" class="form-control" name="bankSortCode" value="" size="32" title="Bank Sort Code" label="Bank Sort Code"><br>    </td>
+                                             </tr>
+                                          </tbody>
+                                       </table>
+                                       <p></p>
+                                       <p></p>
+                                    </form>
+                                </div>
+
+                                <div class="modal-footer">
+                                    <button class="btn btn-link" onclick="addSupplierItem('supplierBank')" >Add Bank</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                   
+                    <div class="modal fade" id="supplierCapabilityModal" data-keyboard="false">
+                        <div class="modal-dialog modal-md">
+                            <div class="modal-content">
+                                <div class="modal-header"><h5>Add Capability</h5></div>
+                                <div class="modal-body">
+                                    <form id="supplierCapabilityForm" method="post">
+                                       <table cellpadding="4" width="100%" cellspacing="0">
+                                          <tbody>
+                                             <tr>
+                                                <td val="" ign="top" colspan="4">Good/Service<br><input type="text" class="form-control" name="service" value="" size="32" title="Service" label="Service"><br>    </td>
+                                             </tr>
+                                             <tr>
+                                                <td val="" ign="top" colspan="4">
+                                                   <p>Description<br><textarea name="description" class="form-control" cols="35" rows="6"></textarea></p>
+                                                </td>
+                                             </tr>
+                                             <tr>
+                                                <td val="" ign="top" colspan="4">Authorized Agent/Manufacturing<br><input type="text" class="form-control" name="authorizedAgent" value="" size="32" title="Authorized Agent" label="Authorized Agent"><br>    </td>
+                                             </tr>
+                                             <tr>
+                                                <td val="" ign="top" colspan="4">Telephone<br><input type="text" class="form-control" name="telephone" value="" size="32" title="Telephone" label="Telephone"><br>    </td>
+                                             </tr>
+                                          </tbody>
+                                       </table>
+                                       <p></p>
+                                       <p></p>
+                                    </form>
+                                </div>
+
+                                <div class="modal-footer">
+                                    <button class="btn btn-link" onclick="addSupplierItem('supplierCapability')" >Add Capability</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                   <div class="modal fade" id="supplierSalesModal" data-keyboard="false">
+                        <div class="modal-dialog modal-md">
+                            <div class="modal-content">
+                                <div class="modal-header"><h5>Add Sales Details</h5></div>
+                                <div class="modal-body">
+                                    <form id="supplierSalesForm" method="post">
+                                         <table width="100%" cellspacing="0">
+                                          <tbody>
+                                             <tr>
+                                                <td val="" ign="top" colspan="4">
+                                                   <p>Service<br><textarea name="service" class="form-control" cols="35" rows="6"></textarea></p>
+                                                </td>
+                                             </tr>
+                                             <tr>
+                                                <td val="" ign="top" colspan="4">Company<br><input type="text" class="form-control" name="company" value="" size="32" title="Company" label="Company"><br>    </td>
+                                             </tr>
+                                             <tr>
+                                                <td val="" ign="top" colspan="4">
+                                                   <p>Address<br><textarea class="form-control"  name="address" cols="35" rows="6"></textarea></p>
+                                                </td>
+                                             </tr>
+                                             <tr>
+                                                <td val="" ign="top" colspan="4">Contact Person<br><input type="text" class="form-control" name="contactPerson" value="" size="32" title="Contact Person" label="Contact Person"><br>    </td>
+                                             </tr>
+                                             <tr>
+                                                <td val="" ign="top" colspan="4">Phone No<br><input type="text" class="form-control" name="phoneNo" value="" size="32" title="Phone No" label="Phone No"><br>    </td>
+                                             </tr>
+                                             <tr>
+                                                <td val="" ign="top" colspan="4">Sales Value<br><input type="text" class="form-control" name="salesValue" value="" size="32" title="Sales Value" label="Sales Value"><br>    </td>
+                                             </tr>
+                                          </tbody>
+                                       </table>
+                                       <p></p>
+                                       <p></p>
+                                    </form>
+                                </div>
+
+                                <div class="modal-footer">
+                                    <button class="btn btn-link" onclick="addSupplierItem('supplierSales')" >Add Sale Details</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="modal fade" id="supplierExperienceModal" data-keyboard="false">
+                        <div class="modal-dialog modal-md">
+                            <div class="modal-content">
+                                <div class="modal-header"><h5>Add Experience</h5></div>
+                                <div class="modal-body">
+                                    <form id="supplierExperienceForm" method="post">
+                                       <table cellpadding="4" width="100%" cellspacing="0">
+                                          <tbody>
+                                             <tr>
+                                                <td val="" ign="top" colspan="4">Organisation<br><input type="text" class="form-control" name="organisation" value="" size="32" title="Organisation" label="Organisation"><br>    </td>
+                                             </tr>
+                                             <tr>
+                                                <td val="" ign="top" colspan="4">Value<br><input type="text" class="form-control" name="value" value="" size="32" title="Value" label="Value"><br>    </td>
+                                             </tr>
+                                             <tr>
+                                                <td val="" ign="top" colspan="4">Year<br><input type="text" class="form-control" name="year" value="" size="32" title="Year" label="Year"><br>    </td>
+                                             </tr>
+                                             <tr>
+                                                <td val="" ign="top" colspan="4">Supplied Good<br><input type="text" class="form-control" name="suppliedGood" value="" size="32" title="Supplied Good" label="Supplied Good"><br>    </td>
+                                             </tr>
+                                             <tr>
+                                                <td val="" ign="top" colspan="4">Destination<br><input type="text" class="form-control" name="destination" value="" size="32" title="Destination" label="Destination"><br>    </td>
+                                             </tr>
+                                          </tbody>
+                                       </table>
+                                       <p></p>
+                                       <p></p>
+                                    </form>
+                                </div>
+
+                                <div class="modal-footer">
+                                    <button class="btn btn-link" onclick="addSupplierItem('supplierExperience')" >Add Experience</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                                       
+                    <div class="modal fade" id="supplierReferenceModal" data-keyboard="false">
+                        <div class="modal-dialog modal-md">
+                            <div class="modal-content">
+                                <div class="modal-header"><h5>Add Experience</h5></div>
+                                <div class="modal-body">
+                                    <form id="supplierReferenceForm" method="post">
+                                        <table cellpadding="4" width="100%" cellspacing="0">
+                                           <tbody>
+                                              <tr>
+                                                 <td val="" ign="top" colspan="4">Company Name<br><input type="text" class="form-control" name="companyName" value="" size="32" title="Company Name" label="Company Name"><br>    </td>
+                                              </tr>
+                                              <tr>
+                                                 <td val="" ign="top" colspan="4">
+                                                    <p>Company Address<br><textarea class="form-control" name="companyAddress" cols="35" rows="6"></textarea></p>
+                                                 </td>
+                                              </tr>
+                                              <tr>
+                                                 <td val="" ign="top" colspan="4">Company Phone No<br><input type="text" class="form-control" name="companyPhoneNo" value="" size="32" title="Company Phone No" label="Company Phone No"><br>    </td>
+                                              </tr>
+                                              <tr>
+                                                 <td val="" ign="top" colspan="4">Company Telephone No<br><input type="text" class="form-control" name="companyTelephoneNo" value="" size="32" title="Company Telephone No" label="Company Telephone No"><br>    </td>
+                                              </tr>
+                                              <tr>
+                                                 <td val="" ign="top" colspan="4">Recommendation Letter<br><input type="file" class="form-control" name="recommendationLetter" value="" size="32" title="Recommendation Letter" label="Recommendation Letter"><br>    </td>
+                                              </tr>
+                                           </tbody>
+                                        </table>
+                                        <p></p>
+                                    </form>
+                                </div>
+
+                                <div class="modal-footer">
+                                    <button class="btn btn-link" onclick="addSupplierItem('supplierReference')" >Add Reference</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>

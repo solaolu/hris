@@ -1,0 +1,104 @@
+<table cellspacing="0" cellpadding="4" width=100% class="table table-responsive table-borderless">
+  <tr>
+    <td colspan=2>EMPLOYEE NAME: ${fullname}</td>
+    <td width="4%">&nbsp;</td>
+    <td width="48%" colspan="2">DATE: ${date}</td>
+  </tr>
+  <tr>
+    <td colspan="2">&nbsp;</td>
+    <td></td>
+    <td colspan="2"></td>
+  </tr>
+  <tr>
+    <td colspan=2>STAFF NO: <?php echo $employeeID; ?></td>
+    <td></td>
+    <td colspan="2"></td>
+  </tr>
+  <tr>
+    <td colspan=2>POSITION: ${jobtitle}</td>
+    <td></td>
+    <td colspan="2"></td>
+  </tr>
+  <tr>
+    <td colspan=2>&nbsp;</td>
+    <td></td>
+    <td colspan="2"></td>
+  </tr>
+  <tr>
+    <td colspan=2 valign="top">
+     <table id="income" width="100%" cellpadding="4" cellspacing="0" class="table-striped">
+     <thead>
+      <tr>
+        <th>Taxable Earnings</th>
+        <td align=right><strong>Amount&nbsp;(&#8358;)</strong></td>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td>${incomeName}</td>
+        <td align="right">${formatAmounts(amount)}</td>
+      </tr>
+      </tbody>
+    </table></td>
+    <td valign="top"></td>
+    <td colspan="2" valign="top">
+     <table id="deductions" width="100%" cellpadding="4" cellspacing="0" class="table-striped">
+      <thead>
+       <tr>
+        <th>Deductions</th>
+        <td align=right><strong>Amount&nbsp;(&#8358;)</strong></td>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td>${deductionName}</td>
+        <td align="right">${formatAmounts(amount)}</td>
+        </tr>
+      <tr>
+      </tbody>
+    </table>
+    </td>
+  </tr>
+  <tr>
+    <td colspan=2>&nbsp;</td>
+    <td></td>
+    <td colspan="2"></td>
+  </tr>
+  <tr>
+    <td style="border-top:1px solid #fff;">Total Taxable</td>
+    <td style="border-top:1px solid #fff;" align="right">${formatAmounts(totalIncome)}</td>
+    <td></td>
+    <td style="border-top:1px solid #fff;">Total Deductions</td>
+    <td style="border-top:1px solid #fff;" align="right">${formatAmounts(totalDeductions)}</td>
+  </tr>
+  <tr>
+    <td colspan=2>&nbsp;</td>
+    <td></td>
+    <td colspan="2"></td>
+  </tr>
+  <tr>
+    <td style="border-bottom: double #fff;">Gross Earnings</td>
+    <td align="right" style="border-bottom: double #fff;">${formatAmounts(totalIncome)}</td>
+    <td></td>
+    <td colspan="2"></td>
+  </tr>
+  <tr>
+    <td colspan=2>&nbsp;</td>
+    <td></td>
+    <td colspan="2"></td>
+  </tr>
+  <tr>
+    <td align="right" style="border-bottom: double #fff;">**** NET PAY **** &#8358;</td>
+    <td style="border-bottom: double #fff;">${grossPay}</td>
+    <td></td>
+    <td colspan="2">NAME:</td>
+  </tr>
+  <tr>
+    <td colspan=2>&nbsp;</td>
+    <td></td>
+    <td colspan="2">FINANCE &amp; ADMIN UNIT SIGNATURE:</td>
+  </tr>
+  <tr>
+    <td colspan="2">&nbsp;</td>
+  </tr>
+</table>
